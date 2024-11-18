@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Load Booking</title>
+  <style>
+    /* Reset styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+    
+    /* Background styling */
+    body {
+      background-image: url('bookingp1.jpeg'); /* Replace with your image file path */
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      color: #ffffff;
+    }
+
+    .container {
+      text-align: center;
+      background-color: rgba(165, 62, 124, 0.9); /* Transparent background for better visibility */
+      width: 90%;
+      max-width: 400px;
+      padding: 20px;
+      border-radius: 10px;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    /* Airport tower background */
+    .container::before {
+      content: "";
+      background-image: url('https://via.placeholder.com/100x200'); /* Placeholder for tower image */
+      background-repeat: no-repeat;
+      background-size: cover;
+      opacity: 0.1;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+    }
+    
+    /* Header and logo */
+    .home-icon {
+      font-size: 24px;
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      color: white;
+    }
+
+    .title {
+      font-size: 2em;
+      font-family: cursive; /* Set to cursive */
+      color: #000000; /* Black color */
+      margin-bottom: 20px;
+    }
+    
+    /* Input fields */
+    .input-group {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    .input-group button {
+      background-color: #c378a6;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-size: 0.9em;
+    }
+
+    .input-group button.active {
+      background-color: #ffd1e1;
+      color: #a53e7c;
+    }
+    
+    /* Booking reference label */
+    .booking-label {
+      font-size: 1.1em;
+      margin-bottom: 10px;
+      display: block;
+    }
+
+    .input-field {
+      width: 100%;
+      padding: 10px;
+      border-radius: 5px;
+      border: none;
+      font-size: 1em;
+    }
+
+    .search-button {
+      background-color: #ff88b7;
+      color: white;
+      border: none;
+      padding: 12px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-size: 1em;
+      margin-top: 10px;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Home Icon -->
+    <div class="home-icon">
+      <a href="bookingpage1.html" style="text-decoration: none; color: white;">&#x1F3E0;</a>
+    </div>
+
+    <!-- Title -->
+    <h1 class="title">Load Booking</h1>
+
+    <!-- Tabs for Contact Number and Booking Reference -->
+    <div class="input-group">
+      <button class="active" id="contactNumberBtn">Contact Number</button>
+      <button id="bookingReferenceBtn">Booking Reference</button>
+    </div>
+
+    <!-- Booking Reference Label and Input -->
+    <label class="booking-label" id="inputLabel">Please enter your Booking reference</label>
+    <input type="text" class="input-field" placeholder="">
+
+    <!-- Search Button -->
+    <button class="search-button">Search</button>
+  </div>
+
+  <script>
+    // Get references to buttons and label
+    const contactNumberBtn = document.getElementById('contactNumberBtn');
+    const bookingReferenceBtn = document.getElementById('bookingReferenceBtn');
+    const inputLabel = document.getElementById('inputLabel');
+
+    // Add event listeners for buttons
+    contactNumberBtn.addEventListener('click', () => {
+      inputLabel.textContent = 'Please enter your Contact number';
+      contactNumberBtn.classList.add('active');
+      bookingReferenceBtn.classList.remove('active');
+    });
+
+    bookingReferenceBtn.addEventListener('click', () => {
+      inputLabel.textContent = 'Please enter your Booking reference';
+      bookingReferenceBtn.classList.add('active');
+      contactNumberBtn.classList.remove('active');
+    });
+  </script>
+
+</body>
+</html>
+
+
+

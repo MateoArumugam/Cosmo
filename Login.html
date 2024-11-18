@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmo Air Login</title>
+    <style>
+        /* General Reset */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+        }
+
+      /* Set the background color and align content in the center of the screen */
+body {
+    background-color: #d81b60;
+    background-image: url("..\Profile Page\bookingp1.jpeg");
+    font-family: 'Arial', sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    margin: 0; /* Remove default margin */
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents tiling */
+}
+
+        /* Container for all elements */
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+        }
+
+        /* Brand name styling */
+        .brand-name {
+            letter-spacing: 10px;
+            position: relative;
+            color: #fff;
+        }
+
+        /* Styling for the login box */
+        .login-box {
+            background-color: #ff9ecb;
+            padding: 30px;
+            border-radius: 10px;
+            width: 300px;
+            color: #d81b60;
+            font-weight: bold;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Heading inside the login box */
+        .login-box h2 {
+            margin-bottom: 20px;
+            font-size: 18px;
+        }
+
+        /* Input fields styling */
+        .input-field {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: none;
+            outline: none;
+        }
+
+        /* Login button styling */
+        .login-btn {
+            background-color: #d81b60;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        /* Links for "Forgot Password" and "Sign Up" */
+        .links {
+            font-size: 14px;
+            margin-top: 10px;
+        }
+
+        /* Styling for links */
+        .links a {
+            color: #d81b60;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Social media icons container */
+        .social-icons {
+            margin-top: 20px;
+        }
+
+        /* Styling for social media icons */
+        .social-icons img {
+            width: 25px;
+            margin: 0 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Main container for the content -->
+    <div class="container">
+        <!-- Brand name title -->
+        <div class="brand-name">
+            <h1>COSMO AIR</h1>
+        </div>
+        <!-- Subheading text under the main title -->
+        <div class="subheading">
+            Fly With South Africa’s Number One Airline
+        </div>
+        <!-- Login box containing the login form -->
+        <form id="loginForm">
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form>
+        <div id="loginResult"></div>
+        
+        <!-- Social media icons section -->
+        <div class="social-icons">
+            <a href="https://www.tiktok.com/login"><img src="..\Login Page\tiktok.png" alt="TikTok"></a>
+            <a href="https://www.facebook.com/"><img src="..\Login Page\instagram.png" alt="Facebook"></a>
+            <a href="https://www.instagram.com/"><img src="..\Login Page\facebook.png" alt="Instagram"></a>
+            <a href="https://www.whatsapp.com/"><img src="..\Login Page\whatsapp.jpg" alt="WhatsApp"></a>
+        </div>
+    </div>
+</body>
+
+</html>

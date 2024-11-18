@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flight Booking</title>
+<style>
+    /* Basic styling for body */
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #D63384;
+        background-image: url("https://github.com/Shonaaa25/Cosmo-Airlines/blob/main/bookingp1.jpeg?raw=true");
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+
+    /* Header styling */
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 5px;
+        background-color: #9c1b64;
+    }
+
+    /* Home button and brand styling */
+    .header a, .header button {
+        color: #fff;
+        text-decoration: none;
+        font-size: 1.2rem;
+        font-weight: bold;
+        padding: 0.5rem 1rem;
+        border: 1px solid #fff;
+        border-radius: 5px;
+        background: none;
+        cursor: pointer;
+    }
+
+    /* Cosmo Air title styling */
+    .header h1 {
+        font-size: 2rem;
+        color: #fff;
+        margin: 0;
+        flex: 1;
+        text-align: center;
+    }
+
+    /* Main container styling */
+    .container {
+        background-color: rgba(156, 27, 100, 0.8);
+        width: 500px;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        position: relative;
+        margin-top: 20px; /* Creates space below header */
+    }
+
+    .container h1 {
+        font-size: 1.2em;
+        color: #FFE066;
+        font-weight: 300;
+        margin-bottom: 20px;
+    }
+
+    /* Flight type selection dropdown */
+    .flight-type {
+        margin-bottom: 15px;
+    }
+
+    .flight-type select {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #D63384;
+        border-radius: 5px;
+        font-size: 1em;
+    }
+
+    /* Input group styling */
+    .input-group {
+        margin-bottom: 15px;
+    }
+
+    .input-group label {
+        display: block;
+        font-size: 0.9em;
+        color: #FFF;
+        margin-bottom: 5px;
+    }
+
+    .input-group select, .input-group input[type="date"], .input-group input[type="number"] {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #D63384;
+        border-radius: 5px;
+        font-size: 1em;
+    }
+
+    /* Passenger group styling */
+    .passenger-group {
+        color: #FFF;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .passenger-group div {
+        width: 32%;
+    }
+
+    /* Search button styling */
+    .search-button {
+        background-color: #D63384;
+        color: white;
+        border: none;
+        padding: 12px;
+        width: 100%;
+        font-size: 1em;
+        font-weight: bold;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 15px;
+    }
+
+    .search-button:hover {
+        background-color: #c12873;
+    }
+
+    /* Need Help button styling */
+    .help-button {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: #FFE066;
+        color: #D63384;
+        border: none;
+        padding: 10px;
+        font-size: 0.9em;
+        font-weight: bold;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+</style>
+</head>
+<body>
+
+<div class="header">
+    <!-- Image as a clickable link -->
+    <a href="..\Profile Page\profile.html">
+        <img src="..\Booking Page\profile-icon.png" alt="Profile Icon" style="height: 50px; border-radius: 50%;">
+    </a>
+    <h1>Cosmo Air</h1> <!-- Cosmo Air title -->
+    <a href="..\Login Page\Login.html" id="logout">Login</a>
+</div>
+
+
+<!-- Main container for flight booking form -->
+<div class="container">
+    <h1>We ensure your comfort and care onboard</h1>
+
+    <!-- Flight type selection dropdown -->
+    <div class="flight-type">
+        <label for="flight-type">Flight Type</label>
+        <select id="flight-type">
+            <option value="one-way">One Way</option>
+            <option value="return">Return</option>
+        </select>
+    </div>
+
+    <!-- Departure airport selection -->
+    <div class="input-group">
+        <label for="departure">Departure</label>
+        <select id="departure">
+            <option value="">Select Airport</option>
+            <option value="JNB">JNB - O.R. Tambo International Airport</option>
+            <option value="CPT">CPT - Cape Town International Airport</option>
+            <option value="DUR">DUR - King Shaka International Airport</option>
+            <option value="PLZ">PLZ - Port Elizabeth International Airport</option>
+            <option value="GRJ">GRJ - George Airport</option>
+        </select>
+    </div>
+
+    <!-- Arrival airport selection -->
+    <div class="input-group">
+        <label for="arrival">Arrival</label>
+        <select id="arrival">
+            <option value="">Select Airport</option>
+            <option value="JNB">JNB - O.R. Tambo International Airport</option>
+            <option value="CPT">CPT - Cape Town International Airport</option>
+            <option value="DUR">DUR - King Shaka International Airport</option>
+            <option value="PLZ">PLZ - Port Elizabeth International Airport</option>
+            <option value="GRJ">GRJ - George Airport</option>
+        </select>
+    </div>
+
+    <!-- Date selection for departure and arrival -->
+    <div class="input-group">
+        <label for="departure-date">Departure Date</label>
+        <input type="date" id="departure-date">
+    </div>
+    <div class="input-group">
+        <label for="arrival-date">Arrival Date</label>
+        <input type="date" id="arrival-date">
+    </div>
+
+    <!-- Passenger selection for adults, children, and infants -->
+    <div class="passenger-group">
+        <div>
+            <label for="adult">Adult (12+ yrs)</label>
+            <input type="number" id="adult" min="1" value="1">
+        </div>
+        <div>
+            <label for="child">Child (2-12 yrs)</label>
+            <input type="number" id="child" min="0" value="0">
+        </div>
+        <div>
+            <label for="infant">Infant (0-2 yrs)</label>
+            <input type="number" id="infant" min="0" value="0">
+        </div>
+    </div>
+
+    <!-- Search flight button -->
+    <button class="search-button">Search Flight</button>
+</div>
+
+<div class="container">
+        
+    <div class="menu-item">
+        <a href="..\Booking Page\LoadBookingp2.html">
+            <img src="load-booking-icon.png" alt="Load Booking">
+        </a>
+    </div>
+</div>
+
+<!-- Fixed Need Help button -->
+<button class="help-button">Need Help?</button>
+
+</body>
+
+</html>

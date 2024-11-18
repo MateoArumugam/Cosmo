@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmo Air - User Profile</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-image: url("bookingp1.jpeg"); /* Updated with your image file */
+            background-size: cover;
+            background-position: center;
+            overflow-y: auto;
+            padding: 20px;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .branding {
+            margin-bottom: 30px;
+        }
+
+        .brand-name {
+            font-size: 60px;
+            font-family: 'Lobster', cursive;
+            letter-spacing: 10px;
+            color: #fff;
+        }
+
+        .profile-form {
+            background-color: #f8bbd0;
+            border-radius: 20px;
+            padding: 30px;
+            width: 350px;
+            text-align: center;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .profile-form h2 {
+            color: #FF4081;
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .profile-form input[type="text"],
+        .profile-form input[type="email"],
+        .profile-form input[type="tel"],
+        .profile-form input[type="file"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 10px;
+        }
+
+        .profile-form button {
+            width: 100%;
+            padding: 12px;
+            background-color: #FF4081;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .profile-form button:hover {
+            background-color: #e91e63;
+        }
+
+        .file-upload {
+            margin-top: 10px;
+            font-size: 14px;
+            color: #fff;
+        }
+
+        .file-upload label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        .save-changes {
+            margin-top: 20px;
+        }
+
+        .home-icon {
+      font-size: 24px;
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      color: white;
+    }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="branding">
+            <h1 class="brand-name">COSMO AIR</h1>
+            <p class="slogan">Fly With South Africa's Number One Airline</p>
+        </div>
+
+        <div class="container">
+            <!-- Home Icon -->
+            <div class="home-icon">
+              <a href="..\Booking Page\bookingpage1.html" style="text-decoration: none; color: white;">&#x1F3E0;</a>
+            </div>
+
+        <div class="profile-form">
+            <h2>Your Profile Information</h2>
+            <form>
+                <!-- Editable user details -->
+				<label for="Name">Name: </label>
+                <input type="text" placeholder="Name" value="John" required>
+				<label for="surname">Surname: </label>
+                <input type="text" placeholder="Surname" value="Doe" required>
+				<label for="ID number:"> ID Number: </label>
+                <input type="text" placeholder="ID" value="123456789" required>
+				<label for="email ">E-mail: </label>
+                <input type="email" placeholder="E-Mail" value="john.doe@example.com" required>
+				<label for="number">Contact Number: </label>
+                <input type="tel" placeholder="Contact" value="0123456789" required>
+
+                <!-- File upload section -->
+                <div class="file-upload">
+                    <label for="profile-pic">Upload Profile Picture:</label>
+                    <input type="file" id="profile-pic" name="profile-pic" accept="image/*">
+                </div>
+
+                <div class="file-upload">
+                    <label for="passport-doc">Upload Passport Document:</label>
+                    <input type="file" id="passport-doc" name="passport-doc" accept=".pdf,.doc,.docx,.jpg,.png">
+                </div>
+
+                <!-- Button to save changes -->
+                <button type="submit" class="save-changes">Save Changes</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+<!-- html & css by Shona Raghunandan -->
+</html>
+
+

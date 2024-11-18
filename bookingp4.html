@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Booking Page</title>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-color: #a7267c;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        color: #fff;
+    }
+
+    .container {
+        width: 90%;
+        max-width: 800px;
+        background-color: #bf75a4;
+        border-radius: 15px;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        position: relative;
+    }
+
+    .back-button {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        font-size: 24px;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    .cart-icon {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 24px;
+        color: #fff;
+    }
+
+    .table-container {
+        display: flex;
+        justify-content: space-between;
+        padding: 15px;
+        background-color: #f3d1e2;
+        border-radius: 10px;
+        margin-top: 40px;
+    }
+
+    .table {
+        width: 100%;
+    }
+
+    .table td, .table th {
+        padding: 8px;
+        text-align: left;
+        font-weight: bold;
+    }
+
+    .table th {
+        font-size: 18px;
+        color: #a7267c;
+    }
+
+    .table td {
+        font-size: 16px;
+        color: #a7267c;
+    }
+
+    .price {
+        text-align: right;
+    }
+
+    .cosmo-logo {
+        text-align: center;
+        margin: 30px 0;
+    }
+
+    .cosmo-logo h1 {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 36px;
+        font-weight: bold;
+        color: #ffffff;
+        letter-spacing: 3px;
+        margin: 0;
+    }
+
+    .cosmo-logo p {
+        font-style: italic;
+        font-size: 18px;
+        color: #f0cfe0;
+        margin: 5px 0 0;
+    }
+
+    .pay-button {
+        display: block;
+        margin: 20px auto 0;
+        padding: 10px 30px;
+        font-size: 18px;
+        background-color: #f3d1e2;
+        color: #a7267c;
+        border: none;
+        border-radius: 20px;
+        cursor: pointer;
+    }
+
+    .pay-button:hover {
+        background-color: #e0b8cf;
+    }
+
+    .footer {
+        text-align: center;
+        font-size: 12px;
+        color: #ffffff;
+        margin-top: 20px;
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="back-button">&larr;</div>
+        <div class="cart-icon">&#128722;</div>
+
+        <div class="table-container">
+            <table class="table">
+                <tr>
+                    <th>Total Including VAT</th>
+                    <td class="price">(Price)</td>
+                </tr>
+                <tr>
+                    <td>For (n) Adults</td>
+                    <td class="price">(Price)</td>
+                </tr>
+                <tr>
+                    <td>For (n) Children</td>
+                    <td class="price">(Price)</td>
+                </tr>
+                <tr>
+                    <td>For (n) Infants</td>
+                    <td class="price">(Price)</td>
+                </tr>
+                <tr>
+                    <td>Fare</td>
+                    <td class="price">(Price)</td>
+                </tr>
+                <tr>
+                    <td>Taxes</td>
+                    <td class="price">(Price)</td>
+                </tr>
+                <tr>
+                    <td>Discount</td>
+                    <td class="price">(Price)</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="cosmo-logo">
+            <h1>COSMO AIR</h1>
+            <p>Travel the Universe, One Flight at a Time</p>
+        </div>
+
+        <button class="pay-button">Pay</button>
+        <div class="footer">Book page 4</div>
+    </div>
+</body>
+</html>

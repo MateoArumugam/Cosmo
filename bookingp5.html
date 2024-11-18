@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Payment UI</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap">
+    <style>
+        /* Resetting margins and paddings */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #aa3b74;
+            font-family: 'Amatic SC', Arial, sans-serif;
+        }
+
+        .container {
+            background-color: #eac5d7;
+            width: 400px;
+            height: 500px; /* Increased height */
+            padding: 30px;
+            border-radius: 20px;
+            text-align: center;
+            border: 6px solid #f8dce4;
+            position: relative;
+        }
+
+        .container::before {
+            content: "";
+            background: url('https://cdn-icons-png.flaticon.com/512/456/456212.png') no-repeat center center / 50px;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            opacity: 0.1;
+        }
+
+        .heading {
+            font-size: 20px;
+            color: #aa3b74;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .input-field {
+            background-color: #f8dce4;
+            border: none;
+            border-radius: 15px;
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            font-size: 18px;
+            color: #6d1f44;
+            text-align: center;
+            font-weight: lighter;
+        }
+
+        .input-field::placeholder {
+            color: #6d1f44;
+        }
+
+        .pay-button {
+            background-color: #aa3b74;
+            color: white;
+            border: none;
+            border-radius: 15px;
+            width: 100%;
+            padding: 12px;
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+
+        .pay-button:hover {
+            background-color: #902c64;
+        }
+
+        .note {
+            font-size: 10px;
+            color: #ffffff;
+            margin-top: 20px;
+            white-space: nowrap; /* Ensures the text stays on one line */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="heading">Cardholder's Name</div>
+        <input type="text" class="input-field" placeholder="Cardholder's Name">
+
+        <div class="heading">Card Number</div>
+        <input type="text" class="input-field" placeholder="Card Number">
+
+        <div class="heading">Expiry Date</div>
+        <input type="text" class="input-field" placeholder="Expiry Date">
+
+        <div class="heading">CVV</div>
+        <input type="password" class="input-field" placeholder="CVV">
+
+        <button class="pay-button">Pay (Total)</button>
+
+        <p class="note">This is a secure platform to make payment, you may have to authorize the payment through your banking app or an SMS</p>
+    </div>
+</body>
+</html>

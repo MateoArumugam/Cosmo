@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment Successful</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif; /* Sets the font for the body */
+      background-color: #e71b8f; /* Background color for the body */
+      background-image: url("https://github.com/Shonaaa25/Cosmo-Airlines/blob/main/login%20image.png?raw=true"); 
+      background-size: cover; /* Covers the entire background */
+      color: #fff; /* Text color */
+      text-align: center; /* Center text alignment */
+      padding: 0; /* Removes padding from body */
+      height: 100vh; /* Sets the height to full viewport height */
+      display: flex; /* Enables flexbox layout */
+      align-items: center; /* Centers items vertically */
+      justify-content: center; /* Centers items horizontally */
+      margin: 0; /* Removes default margin */
+    }
+
+    /* Container styles */
+    .container {
+      background-color: rgba(156, 27, 100, 0.8); /* Semi-transparent background */
+      border-radius: 10px; /* Rounded corners */
+      padding: 2rem; /* Inner padding */
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Subtle shadow effect */
+      width: 80%; /* Width of the container */
+      max-width: 600px; /* Maximum width for larger screens */
+      display: flex; /* Enables flexbox layout */
+      flex-direction: column; /* Stacks children in a column */
+      align-items: center; /* Centers children horizontally */
+    }
+
+    /* Heading styles */
+    h1 {
+      font-size: 2.5rem; /* Font size for heading */
+      margin-bottom: 1rem; /* Space below heading */
+    }
+
+    /* Paragraph styles */
+    p {
+      font-size: 1.2rem; /* Font size for paragraphs */
+      margin-bottom: 1.5rem; /* Space below paragraphs */
+    }
+
+    /* Check-in box styles */
+    .check-in {
+      background-color: #fff; 
+      color: #9c1b64; /* Text color */
+      padding: 1rem; /
+      border-radius: 5px; /* Rounded corners */
+      margin-bottom: 1.5rem; /* Space below the check-in box */
+      width: 100%; /* Full width */
+      text-align: center; /* Center text alignment */
+    }
+
+    /* Button styles */
+    #load-booking {
+      background-color: #e71b8f; /* Background color for button */
+      color: #fff; /* Text color for button */
+      border: none; /* No border */
+      border-radius: 5px; /* Rounded corners */
+      padding: 0.5rem 1rem;
+      font-size: 1rem; /* Font size for button text */
+      cursor: pointer; /* Pointer cursor on hover */
+    }
+
+    /* Button hover effect */
+    #load-booking:hover {
+      background-color: #c61780; /* Darker shade on hover */
+    }
+
+    /* Home button styles */
+    #home-button {
+      background-color: #9c1b64; 
+      color: #fff; /* Text color for home button */
+      border: none; /* No border */
+      border-radius: 5px; /* Rounded corners */
+      padding: 0.5rem 1rem; /* Padding for home button */
+      font-size: 1rem; 
+      cursor: pointer; /* Pointer cursor on hover */
+      margin-top: 1.5rem; 
+    }
+
+    /* Home button hover effect */
+    #home-button:hover {
+      background-color: #7b4b40; /* Darker shade on hover */
+    }
+  </style>
+  <script src="paymentconfirmation.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Payment Successful</h1>
+    <p>Thank you for choosing COSMO AIR. We look forward to welcoming you on board and wish you a safe and pleasant flight.</p>
+    <div class="check-in">
+      <p>Check-in Your Flight 24 Hours Early by clicking "Load Booking"</p>
+      <button id="load-booking">Load Booking</button>
+    </div>
+    <p>Your slip will be emailed shortly.</p>
+    <button id="home-button">Home</button> <!-- Home button added -->
+  </div>
+</body>
+<!-- html & css by Shona Raghunandan -->
+</html>
